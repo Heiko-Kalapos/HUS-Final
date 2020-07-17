@@ -12,7 +12,6 @@
         $sql = "SELECT MAX(id) FROM urls";
         $db_erg = mysqli_query($db_link, $sql);
         $maxId = mysqli_fetch_row($db_erg);
-        #echo $maxId[0];
 
         
 
@@ -20,7 +19,7 @@
 
         if($wurl != ""){                #Wenn eine Wunsch-URL eingegeben wurde
             if(strlen($wurl) <= 10){                #Wenn eingegebene Wunsch-URL kleiner gleich 10 Zeichen
-                #Datenbankabfrage zur �berpr�fung, ob Wunsch-URL bereits vorhanden
+                #Datenbankabfrage zur Überprüfung, ob Wunsch-URL bereits vorhanden
                 $sql = "SELECT sUrl FROM urls";
                 $db_erg = mysqli_query($db_link, $sql);
 
@@ -34,7 +33,6 @@
                 }
                 
                 if($exists == false){
-                    #echo $zielurl;
 
                     $sql = "INSERT INTO urls (oUrl, sUrl) VALUES ('$ourl', '$zielurl')";
                     $db_erg = mysqli_query($db_link, $sql);
@@ -51,10 +49,8 @@
 		}
         else{                #Wenn keine Wunsch-URL eingegeben
             $end = str_pad(($maxId[0]+1), 7, '0', STR_PAD_LEFT);
-            #echo "zahl".$end;
 
             $zielurl = $domain.$end;
-            #echo "".$zielurl;
 
             $sql = "INSERT INTO urls (oUrl, sUrl) VALUES ('$ourl', '$zielurl')";
             $db_erg = mysqli_query($db_link, $sql);

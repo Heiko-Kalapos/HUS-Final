@@ -28,7 +28,6 @@
 
             #Abfrage URL und Überprüfung DB
             $akturl = $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
-            #echo $akturl;
 
 
 
@@ -42,8 +41,7 @@
 
             if(isset($zeile['oUrl'])){
                 $zieladresse = $zeile['oUrl'];
-                echo "<script type='text/javascript'>window.top.location='$zieladresse';</script>"; exit;
-                #header("location: $zieladresse");     
+                echo "<script type='text/javascript'>window.top.location='$zieladresse';</script>"; exit;    
 			}
 
 
