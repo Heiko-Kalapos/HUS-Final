@@ -8,4 +8,4 @@ Der Link, welcher verkürzt werden soll, muss in folgendem Format angegeben werd
 https://www.dhbw-stuttgart.de/home/
 
 Bei der Wunsch-URL muss nur das Kürzel hinter dem letzten `/`angebeben werden. 
-(localhost/hus/index.php/KÜRZEL)
+(http://0.0.0.0:8001/index.php/KÜRZEL)
