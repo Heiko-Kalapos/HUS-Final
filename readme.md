@@ -6,3 +6,6 @@ git clone https://github.com/Heiko-Kalapos/HUS-Final.git && cd ./HUS-Final/ && d
 
 Der Link, welcher verkürzt werden soll, muss in folgendem Format angegeben werden:
 https://www.dhbw-stuttgart.de/home/
+
+Bei der Wunsch-URL muss nur das Kürzel hinter dem letzten `/`angebeben werden. 
+(localhost/hus/index.php/KÜRZEL)
